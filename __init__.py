@@ -7,7 +7,7 @@ bl_info = {
     "description": "Expose option to ppen online VSE documentation",
     "warning": "",
     "doc_url": "",
-    "category": "Seqeuncer",
+    "category": "Sequencer",
 }
 
 import bpy
