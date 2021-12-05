@@ -4,7 +4,7 @@ bl_info = {
     "version": (1, 0),
     "blender": (3, 00, 0),
     "location": "Sequencer > View Menu > Documentation",
-    "description": "Expose option to ppen online VSE documentation",
+    "description": "Expose option to open on-line VSE documentation",
     "warning": "",
     "doc_url": "",
     "category": "Sequencer",
@@ -16,16 +16,14 @@ import webbrowser
 
 
 class OPERATOR_OT_open_vse_docs(Operator):
-    """Open online VSE documentation"""
+    """Open on-line VSE documentation"""
 
     bl_idname = "sequencer.vse_docs"
     bl_label = "Documentation"
     bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
-
         webbrowser.open("vse-docs.readthedocs.io")
-
         return {"FINISHED"}
 
 
